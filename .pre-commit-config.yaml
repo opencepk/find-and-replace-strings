@@ -66,7 +66,7 @@ repos:
     hooks:
       - id: install-pypi_bumpversion_check-requirements
         name: Install PYPI bumpversion check requirements
-        entry: pip install -r pypi_bumpversion_check/requirements.txt
+        entry: pip3 install -r pypi_bumpversion_check/requirements.txt
         language: system
         files: pyproject.toml
   # -----------------------------
@@ -76,7 +76,7 @@ repos:
     hooks:
       - id: pypi_bumpversion_check
         name: Check version
-        entry: python pypi_bumpversion_check/check_version.py
+        entry: python3 pypi_bumpversion_check/check_version.py
         language: system
         files: pyproject.toml
   # -----------------------------
@@ -86,7 +86,7 @@ repos:
     hooks:
       - id: unittest
         name: Run unit tests
-        entry: python -m unittest tests.test_main
+        entry: python3 -m unittest tests.test_main
         language: system
         pass_filenames: false
         always_run: true
