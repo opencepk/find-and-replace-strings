@@ -16,6 +16,7 @@ This is an easy to use package which is already available here https://pypi.org/
 ![package to use](./assets/pypi-package.png "Title")
 
 You can install the package via pip:
+test
 
 ```bash
 pip install find-and-replace-strings
