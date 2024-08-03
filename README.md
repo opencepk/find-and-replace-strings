@@ -6,7 +6,7 @@ Python package and pre-commit-hook for finding and replacing string(s) in file(s
 dddd
 pre-commit install
 pre-commit install -t pre-push
-
+sssss
 The above will make sure precommit will be run automatically on push
 
 ## Installation as a pip package
