@@ -50,6 +50,13 @@ jobs:
         run: |
           cd tests-package-e2e
           ./test-package-e2e.sh
+
+      - name: Read and Stringify JSON Data
+        id: read-and-stringify-json
+        uses: opencepk/opencepk-module-ghactions-common/read-and-stringify-json-action@main
+        with:
+          file: '.project-properties.json'
+          file_type: 'json'
   # ----------------------
   # JOB 3: Run pre-commit hook test
   # ----------------------
